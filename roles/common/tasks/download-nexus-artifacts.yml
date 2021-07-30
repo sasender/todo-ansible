@@ -1,6 +1,6 @@
 - name: Download {{COMPONENT}} from Nexus
   get_url:
-    url: http://54.236.61.34:8081/repository/{{COMPONENT}}/{{COMPONENT}}-{{APP_VERSION}}.zip
+    url: http://10.0.0.222:8081/repository/{{COMPONENT}}/{{COMPONENT}}-{{APP_VERSION}}.zip
     dest: /tmp/{{COMPONENT}}.zip
     username: admin
     password: admin
