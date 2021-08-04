@@ -18,7 +18,7 @@ filebeat.inputs:
 
 {% if IS_STRUCTURED %}
 output.elasticsearch:
-  hosts: ["10.0.04:9200"]
+  hosts: ["10.0.0.4:9200"]
   index: "{{COMPONENT}}-%{+yyyy.MM.dd}"
 {% else %}
 output.logstash:
